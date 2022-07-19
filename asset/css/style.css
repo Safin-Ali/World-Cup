@@ -28,83 +28,6 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
-
-/* ---------------------------
-        Common Class
----------------------------- */
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-.button-1{
-    color: #ffffff;
-    background: #dd0000;
-    padding: 10px;
-    display: inline-block;
-}
-.border-r-5{
-    border-radius: 5px;
-}
-.border-r-10{
-    border-radius: 10px;
-}
-.border-r-30{
-    border-radius: 30px;
-}
-.marginX10{
-    margin: auto var(--Size10);
-}
-.marginY10{
-    margin: var(--Size10) auto;
-}
-.marginX20{
-    margin: auto var(--Size20);
-}
-.marginY20{
-    margin: var(--Size20) auto;
-}
-.marginX30{
-    margin: auto var(--Size30);
-}
-.marginY30{
-    margin: var(--Size30) auto;
-}
-.marginX40{
-    margin: auto var(--Size40);
-}
-.marginY40{
-    margin: var(--Size40) auto;
-}
-/* .paddingX10{
-    padding: 0 var(--Size10);
-}
-.paddingY10{
-    padding: var(--Size10) 0;
-}
-.paddingX20{
-    padding: 0 var(--Size20);
-}
-.paddingY20{
-    padding: var(--Size20) 0;
-}
-.paddingX30{
-    padding: 0 var(--Size30);
-}
-.paddingY30{
-    padding: var(--Size30) 0;
-}
-.paddingX40{
-    padding: 0 var(--Size40);
-}
-.paddingY40{
-    padding: var(--Size40) 0;
-} */
-
-.fontSize70{
-    font-size: var(--Size70);
-}
-
 /* ---------------------------
         Value Variables
 ---------------------------- */
@@ -112,11 +35,13 @@ body {
 :root {
     --deepred: #dd0000;
     --lightwhite: #f0f2f5;
-    --blackpearl:#1e272e;
+    --black01: #161616;
     --Size10: 0.625em;
+    --Size18: 1.125em;
     --Size20: 1.25em;
     --Size30: 1.875em;
     --Size40: 2.5em;
+    --Size60: 3.75em;
     --Size70: 4.375em;
 }
 
@@ -134,6 +59,59 @@ body {
 .top-header-text h1{
     line-height: 1em;
 }
-.top-header-image img{
-    width: 500px;
+.top-header-text{
+    width: 50%;
 }
+.top-header-image{
+    width: 60%;
+    height: 613px;
+    background: url(../images/Banner-Image.svg) bottom no-repeat;
+    background-size: cover;
+}
+
+/* ---------------------------
+    Match Blog Area
+---------------------------- */
+.match-blog-box{
+    display: flex;
+    gap: 25px;
+    margin: 6.25em auto;
+}
+.match-item {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    text-align: center;
+}
+.inner-match-item{
+    background: #1a1a1a;
+}
+.match-selector{
+    background: #ffffff;
+    color: var(--black01);
+    display: block;
+}
+.match-blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.article-box{
+    border: 1px solid #161616;
+}
+.article-box p>a{
+    color: #161616;
+}
+.blog-text{
+    padding: var(--Size20) var(--Size20) 0;
+}
+.match-schedule-info{
+    color: #16161680;
+}
+.match-schedule-info i{
+    margin-right: var(--Size10);
+}
+.fa-comment-dots{
+    margin-left: var(--Size10);
+}
+
