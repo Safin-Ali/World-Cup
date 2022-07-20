@@ -211,7 +211,10 @@ body {
 .footer-links a{
     color: #ffffff;
     margin: auto var(--Size30);
-    position: relative;
+    transition: color .3s ease-in-out;
+}
+.footer-links a:hover{
+    color: #b1b1b1;
 }
 .social-icon-link{
     padding: var(--Size40) 0 0;
