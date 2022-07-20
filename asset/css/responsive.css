@@ -7,7 +7,6 @@
     .top-header{
         flex-direction: column;
         text-align: center;
-        padding: 1em;
     }
     .top-header-text{
         margin: var(--Size30) auto;
@@ -31,7 +30,8 @@
         margin: 0 auto 3.125em;
     }
     .match-item{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
     .inner-match-item {
         background: transparent;
@@ -69,7 +69,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .top-header{
-        padding: 2%;
+        padding: 0 3%;
     }
     .top-header-text{
         margin: var(--Size30) auto;
@@ -123,4 +123,11 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 1235px) {
+    .top-header{
+            padding: 0 3%;
+    }
+}
+
 

@@ -60,8 +60,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1e272e;
-    padding: var(--Size20) var(--Size70) 0;
+    background: linear-gradient(to bottom,#161616,#2d353b);
+    padding: 3% 10% 0;
     gap: var(--Size20);
 }
 .top-header-text h1{
@@ -74,6 +74,12 @@ body {
 .top-header-text{
     width: 50%;
 }
+.top-header-image{
+    width: 50%;
+}
+.top-header-image img{
+    display: block;
+}
 
 /* ---------------------------
     Match Blog Area Start
@@ -81,7 +87,7 @@ body {
 .match-blog-box{
     display: flex;
     gap: 25px;
-    margin: 6.25em auto 3.125em;
+    margin: 6.25em auto;
     
 }
 .match-item {
@@ -122,7 +128,7 @@ body {
     color: #161616;
 }
 .blog-text{
-    padding: var(--Size20) var(--Size20) 0;
+    padding: var(--Size20) var(--Size20) 2%;
 }
 .blog-text p{
     margin: var(--Size20) auto;
@@ -139,7 +145,7 @@ body {
     color: #16161680;
 }
 .match-schedule-info i{
-    margin-right: var(--Size10);
+    margin-right: 2%;
 }
 .fa-comment-dots{
     margin-left: var(--Size10);
@@ -166,7 +172,7 @@ body {
 ---------------------------- */
 
 /* ---------------------------
-    Upcoming match Style
+    Upcoming Match Style
 ---------------------------- */
 
 .match-date{
@@ -180,7 +186,6 @@ body {
     padding: var(--Size40) var(--Size30);
     color: var(--black01);
     text-align: center;
-    cursor: copy;
 }
 .match-box img+p{
     font-size: var(--Size18);

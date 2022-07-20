@@ -6,6 +6,9 @@
     width: 90%;
     margin: 0 auto;
 }
+.no-drop-cursor{
+    cursor: no-drop;
+}
 .button-1{
     color: #ffffff;
     background: #ff3e78;
