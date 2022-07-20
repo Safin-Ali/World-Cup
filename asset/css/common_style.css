@@ -113,6 +113,12 @@
 .fontSize20{
     font-size: var(--Size20);
 }
+.fontSize25{
+    font-size: var(--Size25);
+}
+.fontSize40{
+    font-size: var(--Size40);
+}
 .fontSize70{
     font-size: var(--Size70);
 }

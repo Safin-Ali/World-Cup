@@ -35,10 +35,12 @@ body {
 :root {
     --deepred: #dd0000;
     --lightwhite: #f0f2f5;
+    --lightwhite2: #e8e8e8;
     --black01: #161616;
     --Size10: 0.625em;
     --Size18: 1.125em;
     --Size20: 1.25em;
+    --Size25: 1.5625em;
     --Size30: 1.875em;
     --Size40: 2.5em;
     --Size60: 3.75em;
@@ -65,7 +67,7 @@ body {
 .top-header-image{
     width: 60%;
     height: 613px;
-    background: url(../images/Banner-Image.svg) bottom no-repeat;
+    background: url(../images/Banner-Image.svg) center no-repeat;
     background-size: cover;
 }
 
@@ -75,7 +77,8 @@ body {
 .match-blog-box{
     display: flex;
     gap: 25px;
-    margin: 6.25em auto;
+    margin: 6.25em auto 3.125em;
+    
 }
 .match-item {
     display: flex;
@@ -97,7 +100,7 @@ body {
     gap: 40px;
 }
 .article-box{
-    border: 1px solid #161616;
+    border: 1px solid var(--lightwhite2);
 }
 .article-box p>a{
     color: #161616;
@@ -114,4 +117,32 @@ body {
 .fa-comment-dots{
     margin-left: var(--Size10);
 }
+.view-all-btn {
+    text-align: center;
+}
+.view-all-btn button{
+    background: #dd0000;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: var(--Size10);
+    display: none;
+}
 
+/* ---------------------------
+        Footer Blog Area
+---------------------------- */
+
+footer{
+    background: var(--black01);
+    text-align: center;
+}
+footer h1{
+    border-bottom: 1px solid #ffffff10;
+}
+.footer-links a{
+    color: #ffffff;
+}
+.social-icon-link{
+    padding: var(--Size40) 0 0;
+}
