@@ -17,8 +17,11 @@
         font-size: var(--Size20);
         line-height: 20pt;
     }
-    .top-header-text p span{
-        display: none;
+    .top-header-text p{
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .top-header-image{
         width: 100%;

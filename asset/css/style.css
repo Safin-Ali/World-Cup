@@ -62,6 +62,7 @@ body {
     align-items: center;
     background: #1e272e;
     padding: var(--Size20) var(--Size70) 0;
+    gap: var(--Size20);
 }
 .top-header-text h1{
     font-size: var(--Size70);
