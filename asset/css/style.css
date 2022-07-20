@@ -37,6 +37,7 @@ body {
     --lightwhite: #f0f2f5;
     --lightwhite2: #e8e8e8;
     --black01: #161616;
+    --black02: #4D4D4D;
     --Size10: 0.625em;
     --Size18: 1.125em;
     --Size20: 1.25em;
@@ -72,7 +73,7 @@ body {
 }
 
 /* ---------------------------
-    Match Blog Area
+    Match Blog Area Start
 ---------------------------- */
 .match-blog-box{
     display: flex;
@@ -128,6 +129,29 @@ body {
     border-radius: var(--Size10);
     display: none;
 }
+
+/* ---------------------------
+    Match Blog Area End
+---------------------------- */
+
+/* ---------------------------
+    Upcoming match Style
+---------------------------- */
+
+.match-date{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--Size20);
+}
+.match-box{
+    border: 1px solid #16161610;
+    padding: var(--Size40) var(--Size20);
+    color: var(--black01);
+}
+.match-date:last-child{
+    color: var(--black02);
+}
+
 
 /* ---------------------------
         Footer Blog Area
