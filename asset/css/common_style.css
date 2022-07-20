@@ -8,9 +8,15 @@
 }
 .button-1{
     color: #ffffff;
-    background: #dd0000;
+    background: #ff3e78;
     padding: 10px;
     display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.button-1:hover{
+    color: #ff2e6d;
+    background: transparent;
+    outline: 2px solid #ff2e6d;
 }
 .transparent-button{
     display: inline-block;
@@ -18,10 +24,22 @@
     border-radius: 5px;
     padding: 1% var(--Size10);
     color: #1a1a1a;
+    transition: all .3s ease-in-out;
+}
+.transparent-button:hover{
+    border: 2px solid;
+    border-image: linear-gradient(to top left,#ff0000,#0000ff);
+    border-image-slice: 1;
+    background: linear-gradient(to right bottom,#ff000060,#0000ff60);
+    color: var(--black01);
 }
 #active-button{
     color: #ffffff;
-    background: #dd0000;
+    background: #1B9CFC;
+    transition: background .3s ease-in-out;
+}
+#active-button:hover{
+    background: #0785e6;
 }
 .fontWeight-semibold{
     font-weight: 600;

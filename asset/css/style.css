@@ -100,6 +100,11 @@ body {
     background: #ffffff;
     color: var(--black01);
     display: block;
+    transition: background .3s ease-in-out,color .3s ease-in-out;
+}
+.match-selector:hover{
+    color: #ffff;
+    background: #1B9CFC;
 }
 .inner-match-item{
     padding: var(--Size20);
@@ -124,6 +129,11 @@ body {
 .blog-text p a{
     font-size: var(--Size18);
 }
+.blog-text p a:hover{
+    background: linear-gradient(to top right,#f58300,#f6416c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .match-schedule-info{
     color: #16161680;
 }
@@ -137,12 +147,17 @@ body {
     text-align: center;
 }
 .view-all-btn button{
-    background: #dd0000;
+    background: #ff0000;
     color: #ffffff;
     padding: 10px 30px;
     border: none;
     border-radius: var(--Size10);
     display: none;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+.view-all-btn button:hover{
+    background: #d30000;
 }
 
 /* ---------------------------
@@ -164,6 +179,7 @@ body {
     padding: var(--Size40) var(--Size30);
     color: var(--black01);
     text-align: center;
+    cursor: copy;
 }
 .match-box img+p{
     font-size: var(--Size18);
@@ -194,6 +210,7 @@ body {
 .footer-links a{
     color: #ffffff;
     margin: auto var(--Size30);
+    position: relative;
 }
 .social-icon-link{
     padding: var(--Size40) 0 0;
