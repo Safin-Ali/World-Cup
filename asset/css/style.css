@@ -52,6 +52,10 @@ body {
         Top Header
 ---------------------------- */
 
+.header_area{
+    margin: var(--Size40) auto;
+}
+
 .top-header{
     display: flex;
     justify-content: space-between;
@@ -60,7 +64,11 @@ body {
     padding: var(--Size20) var(--Size70) 0;
 }
 .top-header-text h1{
+    font-size: var(--Size70);
     line-height: 1em;
+}
+.top-header-text p{
+    margin: var(--Size30) auto;
 }
 .top-header-text{
     width: 50%;
@@ -88,12 +96,21 @@ body {
     text-align: center;
 }
 .inner-match-item{
+    padding: var(--Size20) 0;
     background: #1a1a1a;
+}
+.match-selector{
+    font-size: var(--Size20);
+    margin: var(--Size10) auto;
+    padding: var(--Size10);
 }
 .match-selector{
     background: #ffffff;
     color: var(--black01);
     display: block;
+}
+.inner-match-item{
+    padding: var(--Size20);
 }
 .match-blog{
     display: grid;
@@ -108,6 +125,12 @@ body {
 }
 .blog-text{
     padding: var(--Size20) var(--Size20) 0;
+}
+.blog-text p{
+    margin: var(--Size20) auto;
+}
+.blog-text p a{
+    font-size: var(--Size18);
 }
 .match-schedule-info{
     color: #16161680;
@@ -150,7 +173,10 @@ body {
     color: var(--black01);
     text-align: center;
 }
-.match-date:last-child{
+.match-box img+p{
+    font-size: var(--Size18);
+}
+.match-date p:last-child{
     color: var(--black02);
 }
 
@@ -159,16 +185,28 @@ body {
         Footer Blog Area
 ---------------------------- */
 
-footer{
+.footer_area{
+    padding: var(--Size20) auto;
     background: var(--black01);
     text-align: center;
 }
-footer h1{
+.footer_area h1{
+    font-size: var(--Size40);
+    margin: auto var(--Size40);
     border-bottom: 1px solid #ffffff10;
+    padding: var(--Size10);
+}
+.footer-links{
+    padding: var(--Size20);
 }
 .footer-links a{
     color: #ffffff;
+    margin: auto var(--Size30);
 }
 .social-icon-link{
     padding: var(--Size40) 0 0;
+}
+.social-icon-link a{
+    margin: auto var(--Size10);
+    font-size: var(--Size20);
 }

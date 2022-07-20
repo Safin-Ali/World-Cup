@@ -41,7 +41,7 @@
 .border-r-30{
     border-radius: 30px;
 }
-.margin10{
+/* .margin10{
     margin: var(--Size10);
 }
 .margin20{
@@ -121,4 +121,4 @@
 }
 .fontSize70{
     font-size: var(--Size70);
-}
+} */
