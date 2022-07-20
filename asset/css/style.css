@@ -73,12 +73,6 @@ body {
 .top-header-text{
     width: 50%;
 }
-.top-header-image{
-    width: 60%;
-    height: 613px;
-    background: url(../images/Banner-Image.svg) center no-repeat;
-    background-size: cover;
-}
 
 /* ---------------------------
     Match Blog Area Start
@@ -103,8 +97,6 @@ body {
     font-size: var(--Size20);
     margin: var(--Size10) auto;
     padding: var(--Size10);
-}
-.match-selector{
     background: #ffffff;
     color: var(--black01);
     display: block;
@@ -208,5 +200,6 @@ body {
 }
 .social-icon-link a{
     margin: auto var(--Size10);
-    font-size: var(--Size20);
+    font-size: var(--Size25);
+    display: none;
 }

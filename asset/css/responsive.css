@@ -3,12 +3,58 @@
     Smart Phone Screen
 ---------------------------- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
     .top-header{
-        display: block;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+    .top-header-text{
+        margin: var(--Size30) auto;
+        padding: 0;
     }
     .top-header-text h1{
         font-size: var(--Size20);
-        padding: 0;
+        line-height: 20pt;
+    }
+    .top-header-text p span{
+        display: none;
+    }
+    .top-header-image{
+        width: 100%;
+    }
+    .match-blog-box{
+        flex-direction: column;
+        margin: 0 auto 3.125em;
+    }
+    .match-item{
+        width: 100%;
+    }
+    .inner-match-item {
+        background: transparent;
+        margin: 0 var(--Size60);
+    }
+    .match-selector{
+        border: 1px solid var(--lightwhite2);
+    }
+    .match-blog{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .match-date{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .match-box {
+        width: 100%;
+        padding: var(--Size40);
+    }
+    .footer_area h1{
+        margin: var(--Size10);
+    }
+    .footer-links>a{
+        display: block;
+        margin: var(--Size10) auto
+    }
+    .social-icon-link a{
+        display: inline-block;
     }
 }
