@@ -98,7 +98,7 @@ body {
 .match-blog{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 40px;
+    gap: var(--Size40);
 }
 .article-box{
     border: 1px solid var(--lightwhite2);
@@ -141,12 +141,14 @@ body {
 .match-date{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: var(--Size20);
+    gap: var(--Size40);
 }
 .match-box{
+    width: 18em;
     border: 1px solid #16161610;
-    padding: var(--Size40) var(--Size20);
+    padding: var(--Size40) var(--Size30);
     color: var(--black01);
+    text-align: center;
 }
 .match-date:last-child{
     color: var(--black02);
